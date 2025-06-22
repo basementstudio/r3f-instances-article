@@ -1,4 +1,4 @@
-import { createInstances, Instance, Instances } from "@react-three/drei"
+import { createInstances } from "@react-three/drei"
 import * as THREE from "three"
 
 const boxCount = 1000
