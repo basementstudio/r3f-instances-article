@@ -31,7 +31,7 @@ const baseMaterial = new THREE.RawShaderMaterial({
 
     void main() {
       vec3 blobShift = movement(position);
-      vec4 modelPosition = instanceMatrix * modelMatrix * vec4(blobShift, 1.0);
+      vec4 modelPosition = modelMatrix * instanceMatrix * vec4(blobShift, 1.0);
       vec4 viewPosition = viewMatrix * modelPosition;
       vec4 projectionPosition = projectionMatrix * viewPosition;
       gl_Position = projectionPosition;
